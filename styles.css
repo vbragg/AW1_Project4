@@ -15,14 +15,20 @@ font-family: 'Cabin', sans-serif;
 
 /* ***** SPLASH PAGE **** */
 
+
 #button1 {
   font-family: 'Happy Monkey', cursive;
   color: #ffffff;
   background-color: #000000;
   border: 3px solid #ffffff;
+  font-size: 1.5625rem;
+  padding: 15px 25px;
 }
 
-#splashbutton {
-    font-style: 1.375rem;
-    padding: 7px;
+#splash {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+
 }
