@@ -13,6 +13,53 @@ font-family: 'Happy Monkey', cursive;
 font-family: 'Cabin', sans-serif;
 */
 
+.desktopnav {
+	display: none;
+}
+
+/*****this is controlling hamburger menu *****/
+
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#ffffff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#ffffff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/*hamburger menu ends */
+
 /* ***** SPLASH PAGE **** */
 
 
@@ -23,12 +70,57 @@ font-family: 'Cabin', sans-serif;
   border: 3px solid #ffffff;
   font-size: 1.5625rem;
   padding: 15px 25px;
+	float: right;
+	margin: 10% 30%;
 }
 
-#splash {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: flex-end;
+
+@media (min-width: 863px) {
+	.menu, .hamburger, .cross {
+	display: none;
+}
+
+	#button1 {
+	 margin: 40% 10% 0 10%;
+	 overflow-y: hidden;
+	}
+
+	.desktopnav {
+	display: block;
+	width: 80%;
+}
+
+header #flexnav figure {
+	width: 20%;
+}
+
+#flexnav {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.desktopnav ul li {
+	display: inline;
+	list-style-type: none;
+	padding: 3%;
+	text-align: right;
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.125rem;
+}
+
+.desktopnav a:link, .desktopnav a:visited {
+	color: #ffffff;
+}
+
+.desktopnav a:hover, .desktopnav a:active {
+	color: #92CA6A;
+	text-decoration: underline;
+}
+
+.desktopnav ul {
+		text-align: right;
+		width: 100%;
+}
 
 }
