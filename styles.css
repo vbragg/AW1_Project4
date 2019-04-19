@@ -91,9 +91,16 @@ h3 {
 		padding-bottom: 2%;
 }
 
+h4 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.125rem;
+	padding-bottom: 4%;
+}
+
 section {
 	padding-bottom: 1%;
 }
+
 
 a:link, a:visited {
 	color: #ffffff;
@@ -165,7 +172,7 @@ footer {
 	padding: 2%;
 }
 
-#random_fact {
+.factfont {
 	font-size: 0.75rem;
 }
 
@@ -174,6 +181,49 @@ footer {
 	max-width: 550px;
 	display: block;
 	margin: auto;
+}
+
+ol {
+	padding-left: 2%;
+}
+
+ol li {
+	font-family: 'Cabin', sans-serif;
+	padding-bottom: 1%;
+	font-size: 0.9375rem;
+}
+
+ol li:hover {
+	font-size: 1.125rem;
+}
+
+ol li p {
+	font-size: 0.8125rem;
+}
+
+/* #mobilelayout {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+} */
+
+aside figure img{
+	height: 100%;
+	max-height: 500px;
+	margin: auto;
+	display: block;
+}
+
+#jaguar, #leopardlooking {
+	padding: 2%;
+}
+
+figcaption {
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
 }
 
 
@@ -226,10 +276,10 @@ header #flexnav figure {
 		width: 100%;
 }
 
-.titles {
+/*.titles {
 	text-align: left;
 	padding-left: 34%;
-}
+}  */
 
 .image-grid {
 	position: -webkit-sticky; /* Safari */
@@ -274,11 +324,41 @@ aside {
 		margin-right: 1%;
 }
 
+#desktoplayout {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
 }
+
+#order1 {
+	order: 1;
+	flex-grow: 1;
+}
+
+#order2 {
+		order: 2;
+		flex-grow: 3;
+	}
+#order3 {
+	order: 3;
+	flex-grow: 1;
+}
+
+/*aside figure img {
+	display: inline;
+}*/
+
+
+}
+
 
 @media (min-width: 863px) and (max-width: 969px) {
 	#leopardright {
 		padding-top: 30%;
+	}
+
+	.blackblock {
+		padding: 5%;
 	}
 }
 
@@ -286,6 +366,7 @@ aside {
 	#leopardright {
 		padding-top: 20%;
 	}
+
 }
 
 @media (min-width: 1016px) and (max-width: 1400px) {
