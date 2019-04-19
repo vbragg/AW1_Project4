@@ -60,6 +60,8 @@ font-family: 'Cabin', sans-serif;
 
 /*hamburger menu ends */
 
+
+
 /* ***** SPLASH PAGE **** */
 
 
@@ -233,14 +235,55 @@ figcaption {
 	display: none;
 }
 
+/* CSS ANIMATION NAV */
+
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+		width: 100%;
+}
+
+/* END ANIMATION NAVIGATION */
+
 	#button1 {
 	 margin: 40% 10% 0 10%;
 	 overflow-y: hidden;
 	}
 
 	.desktopnav {
-	display: block;
+	display: inline;
 	width: 80%;
+  }
+
+
+	.desktopnav a {
+		z-index: 0;
+		position: relative;
+		padding: 10px;
 }
 
 header #flexnav figure {
@@ -249,17 +292,18 @@ header #flexnav figure {
 
 #flexnav {
 	display: flex;
-	width: 100%;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .desktopnav ul li {
 	display: inline;
 	list-style-type: none;
-	padding: 3%;
 	text-align: right;
 	font-family: 'Cabin', sans-serif;
 	font-size: 1.125rem;
+	padding: 15px;
 }
 
 .desktopnav a:link, .desktopnav a:visited {
