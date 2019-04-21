@@ -87,6 +87,10 @@ h1, h2 {
 		letter-spacing: 3px;
 }
 
+#smallerfont {
+	font-size: 1.9rem; 
+}
+
 h3 {
 		font-family: 'Happy Monkey', cursive;
 		font-size: 1.25rem;
@@ -135,6 +139,15 @@ p {
 .titles {
 	text-align: center;
 	padding: 1% 0;
+}
+
+.titles {
+  letter-spacing: 0;
+  transition: all .75s ease-out;
+}
+
+.titles.spaced {
+  letter-spacing: 5px;
 }
 
 #smallfont {
@@ -320,10 +333,19 @@ header #flexnav figure {
 		width: 100%;
 }
 
-/*.titles {
-	text-align: left;
-	padding-left: 34%;
-}  */
+.footerimg {
+	width: 100%;
+	max-width: 65px;
+	display: block;
+	margin: auto;
+	padding-bottom: 1%;
+}
+
+.footerimg:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
 
 .image-grid {
 	position: -webkit-sticky; /* Safari */
@@ -388,9 +410,6 @@ aside {
 	flex-grow: 1;
 }
 
-/*aside figure img {
-	display: inline;
-}*/
 
 
 }

@@ -11,3 +11,9 @@ var facts_threats = [
 var para = document.getElementById("threatfacts");
 var rand_three = Math.floor(Math.random()*3); // THis gets random to return a total of 3 numbers
 para.innerHTML = facts_threats[rand_three];
+
+//LETTER SPACING
+
+$('.titles').on('mouseenter', function(){
+  $(this).toggleClass('spaced');
+});
