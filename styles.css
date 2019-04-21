@@ -235,6 +235,14 @@ aside figure img{
 	padding: 2%;
 }
 
+.footerimg {
+	width: 100%;
+	max-width: 65px;
+	display: block;
+	margin: auto;
+	padding-bottom: 1%;
+}
+
 figcaption {
 	color: #ffffff;
 	text-align: center;
@@ -332,14 +340,6 @@ header #flexnav figure {
 		width: 100%;
 }
 
-.footerimg {
-	width: 100%;
-	max-width: 65px;
-	display: block;
-	margin: auto;
-	padding-bottom: 1%;
-}
-
 .footerimg:hover {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
@@ -430,8 +430,6 @@ aside {
 
 /* Grow Shadow */
 .hvr-grow-shadow {
-  /*display: inline-block;
-  vertical-align: middle;*/
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(255, 255, 255, 0);
@@ -444,6 +442,10 @@ aside {
   box-shadow: 0 10px 10px -10px rgba(255, 255, 255, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+figcaption {
+	padding-top: 5%;
 }
 
 /* END IMAGE GROW EFFECT */
