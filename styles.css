@@ -134,6 +134,9 @@ p {
 	max-width: 500px;
 	display: block;
 	margin: auto;
+	-moz-box-shadow: 1px 2px 3px 6px #000000;
+	-webkit-box-shadow: 1px 2px 3px 6px #000000;
+	box-shadow: 1px 2px 3px 6px #000000;
 }
 
 .titles {
@@ -157,6 +160,11 @@ p {
 #background {
 	background: rgba(0, 0, 0, .6);
 	padding: 3%;
+}
+
+.last {
+	font-size: 0.75rem;
+	padding-top: 3%; 
 }
 
 .image-grid {
