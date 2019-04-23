@@ -228,14 +228,6 @@ ol li p {
 	font-size: 0.8125rem;
 }
 
-/* #mobilelayout {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-} */
-
 aside figure img{
 	height: 100%;
 	max-height: 500px;
